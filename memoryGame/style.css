@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: violet;
+}
+.showImages {
+  display: grid;
+  width: 300px;
+  height: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  perspective: 400px;
+}
+
+.grid {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s ease;
+}
+
+.toggle{
+    transform: rotateY(180deg);
+}
+
+img,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  background-color: white;
+  backface-visibility: hidden;
+}
