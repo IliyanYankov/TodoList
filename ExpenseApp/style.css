@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: rgb(238, 174, 202);
+  background-image: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 168, 233, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: table-column;
+  position: absolute;
+  top: 20%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-made {
+  width: 100vh;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+}
+.date {
+  width: 47%;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px;
+}
+.amount {
+  width: 47%;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.submit {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  margin: 10px;
+  height: 2rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  left: 35%;
+  top: 100%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgb(252, 176, 69) 100%
+  );
+  color: white;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.submit:hover {
+  font-size: 1.5rem;
+}
+
+.showData {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  min-width: 100vh;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+  font-size: 1.2rem;
+  color: rgb(43, 40, 40);
+}
+
+.button {
+  width: 5rem;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+    display: none;
+}
