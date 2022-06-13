@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(64, 29, 253, 1) 52%,
+    rgba(124, 76, 194, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+#formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nameLabel,
+#passwordLabel {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  color: black;
+}
+
+#passwordInput,
+#nameInput {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem;
+}
+
+#inputButtonReg,
+#inputButtonLog {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+#inputButtonReg:hover,
+#inputButtonLog:hover {
+  font-size: 1.3rem;
+  color: white;
+  background-color: blue;
+}
+
+#changeBtnLogin,
+#changeBtnReg {
+  border: none;
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: underline;
+}
+#changeBtnLogin:hover,
+#changeBtnReg:hover {
+  color: darkmagenta;
+}
+
+#registrationFrom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+#nameRegLeb,
+#passordRegLeb,
+#emailRegLeb,
+#phoneNumber {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  color: black;
+}
+#nameRegInput,
+#passwordRegInput,
+#emailRegInput,
+#phoneRegInput {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem;
+}
+
+.toggle {
+  opacity: 0;
+}
+h1 {
+  color: black;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}

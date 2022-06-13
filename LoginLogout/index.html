@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="result.html" id="formLogin" method="post">
+      <h1>Login</h1>
+      <label id="nameLabel" for="nameInput">Name</label>
+      <input type="text" id="nameInput" required />
+      <label for="passwordInput" id="passwordLabel">Password</label>
+      <input type="passwordInput" id="passwordInput" required />
+      <input type="submit" value="Submit" id="inputButtonLog" />
+      <button id="changeBtnLogin">Registration</button>
+    </form>
+
+    <form action="#" id="registrationFrom">
+      <h1>Registration</h1>
+      <label for="name" id="nameRegLeb">Name</label>
+      <input type="text" id="nameRegInput" required />
+      <label for="password" id="passordRegLeb">Password</label>
+      <input type="password" id="passwordRegInput" required />
+      <label for="email" id="emailRegLeb">Email</label>
+      <input type="email" id="emailRegInput" required />
+      <label for="phone" id="phoneNumber">Phone Number</label>
+      <input type="number" id="phoneRegInput" />
+      <input type="submit" value="Submit" id="inputButtonReg" />
+      <button id="changeBtnReg">Login</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
