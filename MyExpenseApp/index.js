@@ -69,38 +69,38 @@ function getFromLocalStorage() {
   }
 }
 
-// function saveLocalStorage(e) {
-//     e.preventDefault();
-//     let arr;
-//     if (localStorage.getItem("login") === null) {
-//       arr = [];
-//     } else {
-//       arr = JSON.parse(localStorage.getItem("login"));
-//     }
-//     arr.push(nameReg.value, passwordReg.value, emailReg.value, numberReg.value);
-//     localStorage.setItem("login", JSON.stringify(arr));
-//   }
+function saveLocalStorage(e) {
+    e.preventDefault();
+    let arr;
+    if (localStorage.getItem("login") === null) {
+      arr = [];
+    } else {
+      arr = JSON.parse(localStorage.getItem("login"));
+    }
+    arr.push(nameReg.value, passwordReg.value, emailReg.value, numberReg.value);
+    localStorage.setItem("login", JSON.stringify(arr));
+  }
 
-// const validationLocalStorage = () => {
-//     let passwordLog = false;
-//     let nameLog = false;
-//     let arr;
+const validationLocalStorage = () => {
+    let passwordLog = false;
+    let nameLog = false;
+    let arr;
 
-//     if (localStorage.getItem("login") === null) {
-//       arr = [];
-//     } else {
-//       arr = JSON.parse(localStorage.getItem("login"));
-//     }
+    if (localStorage.getItem("login") === null) {
+      arr = [];
+    } else {
+      arr = JSON.parse(localStorage.getItem("login"));
+    }
 
-//     for (let i = 0; i < arr.length; i++) {
-//       if (nameInputLogin.value === arr[i]) {
-//         passwordLog = true;
-//       }
-//       if (passwordLoginInput.value === arr[i]) {
-//         nameLog = true;
-//       }
-//     }
-//     if (passwordLog === true && nameLog === true) {
-//       return true;
-//     }
-//   };
+    for (let i = 0; i < arr.length; i++) {
+      if (nameInputLogin.value === arr[i]) {
+        passwordLog = true;
+      }
+      if (passwordLoginInput.value === arr[i]) {
+        nameLog = true;
+      }
+    }
+    if (passwordLog === true && nameLog === true) {
+      return true;
+    }
+  };
