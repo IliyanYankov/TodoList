@@ -43,13 +43,13 @@ button.addEventListener("click", () => {
     moneyIncome: moneyIncome.textContent,
     spendIncome: spendIncome.textContent,
   }
-  storage_state = localStorage.getItem('all_state')
+  storage_state = localStorage.getItem('expense_app_state')
   if (storage_state === null) {
-    localStorage.setItem('all_state', JSON.stringify({}))
+    localStorage.setItem('expense_app_state', JSON.stringify({}))
   } 
-  storage_state = JSON.parse(localStorage.getItem('all_state'))
+  storage_state = JSON.parse(localStorage.getItem('expense_app_state'))
 
   storage_state[nameUser] = state
-  localStorage.setItem('all_state', JSON.stringify(storage_state))
-  console.log(localStorage.getItem('all_state'));
+  localStorage.setItem('expense_app_state', JSON.stringify(storage_state))
+  console.log(localStorage.getItem('expense_app_state'));
 });
