@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #cb1b7f,
+    #c43d8f,
+    #bc549d,
+    #b466a7,
+    #ad75ae,
+    #ad78b5,
+    #ad7bbd,
+    #ac7ec4,
+    #af77d1,
+    #b16fdf,
+    #b167ed,
+    #b05ffb
+  );
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 40vw;
+  height: 35vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputFields {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.incomeContainer,
+.spendContainer,
+.placeContainer {
+  display: flex;
+  flex-direction: column;
+}
+.incomeContainer {
+  margin-top: 12px;
+}
+
+.amountspend,
+.amountIncome,
+.amountplace {
+  border: none;
+  border-radius: 3px;
+  width: 15rem;
+  height: 2rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+  -moz-appearance: textfield;
+  padding: 5px;
+}
+
+.submit {
+  width: 5rem;
+  height: 2rem;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #390924;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in;
+}
+.submit:hover {
+  background-color: #c43d8f;
+}
+label {
+  color: #ad7bbd;
+  font-size: 1.2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  color: #ad7bbd;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.infoIncome,
+.totalInfo,
+.spendInfo {
+  margin: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputFields">
+        <div class="incomeContainer">
+          <label for="income">Income</label>
+          <input type="number" class="amountIncome" id="income" />
+        </div>
+        <div class="spendContainer">
+          <label for="spend">Spend</label>
+          <input type="number" class="amountspend" id="spend" />
+        </div>
+        <div class="placeContainer">
+          <label for="place">Where</label>
+          <input type="text" class="amountplace" id="place" />
+        </div>
+        <button class="submit" type="submit">Submit</button>
+      </div>
+      <div class="info">
+        <div class="infoIncome">
+          <h3>Income</h3>
+          <p class="moneyIncome"></p>
+        </div>
+        <div class="totalInfo">
+          <h3>Total</h3>
+          <p class="totalMoney"></p>
+        </div>
+        <div class="spendInfo">
+          <h3>Last Spend</h3>
+          <p class="spendMoney"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
